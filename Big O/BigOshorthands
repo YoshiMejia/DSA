@@ -1,0 +1,6 @@
+
+--> Arithmetic operations are constant. The number size doesn't matter. 2 + 2 and 10000000 + 2 are the same runtime.
+--> Variable assignments are also constant. x = 10 is the same runtime as x = 10000000
+--> Accessing elements in an array by index or an object by key is constant. 
+--> In a loop, the complexity is the length of the loop times the complexity of whatever happens inside of the loop.
+
