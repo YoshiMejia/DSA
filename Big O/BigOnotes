@@ -1,0 +1,42 @@
+Gives devs a way of describing the relationship from the input of a function and how it changes the runtime/speed of the function. the relationship between the input size and the relative time to that input.
+
+the exact details (like the number actually inputted) don't matter
+
+
+f => function
+n => input 
+= n => output
+
+--> f(n) could be linear (f(n) = n)
+as 'n' scales, the runtime scales as well
+
+--> f(n) could be quadratic (f(n) = n2)
+as 'n' grows, the runtime squares related to the square of n
+
+--> f(n) could be constant (f(n) = 1)
+as 'n' grows it has no impact b/c the runtime is always constant (here it's simplified to 1)
+
+--> f(n) could be entirely different
+
+takeaway: as 'n' grows, will the runtime increase?
+- When talking about Big O, it's the runtime worst case scenario
+
+function addUpTo(n) {
+    return n * (n + 1) / 2;
+} #=> this is always going to be 3 operations, with a Big O of O(1). as 'n' grows it will not affect the runtime.
+
+function addUpTo(n) {
+    let total = 0;
+    for (let i = 1; i <= n; i++){
+        total += i;
+    }
+    return total;
+} #=> The number of operations will eventually be bound by a multiple of n, so the Big O is O(n)
+
+function printAllPairs(n) {
+    for(var i = 0; i < n; i++){  #=> O(n)
+        for (var j = 0; j < n; j++){   #=> O(n)
+            console.log(i, j);
+        }
+    }
+} #=> an O(n) nested inside of another O(n) is O(n2). As n grows the runtime grows at the rate of O(n2)
