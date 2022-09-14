@@ -1,0 +1,27 @@
+Arrays are slow bc they are ordered lists (objects === unordered b/c of key/value pairs)
+
+-- When to use arrays -- 
+-> if you need order
+-> if you need fast access/insertion/removal
+
+-- Big O of Arrays --
+-> Searching - O(n)
+-> Access - O(1)
+
+Big O of array insertion/removal depends 
+For inserting at the end of an array, its a constant O(1). 
+But if inserting at the beginning, the indices for the other elements all need to get shifted over. 
+So inserting at the beginning of an array is O(n) because it depends on how many (n) elements are in the array.
+Same goes for removing at the beginning, because same as before, the indices need to be shifted again. 
+.push and .pop methods are always going to be faster than .shift and .unshift
+
+-- Built in Array Methods -- 
+-> push - O(1)
+-> pop - O(1)
+-> shift - O(n)
+-> unshift - O(n)
+-> concat O(n)
+-> splice O(n)
+-> slice O(n)
+-> sort O(n * log n)
+-> forEach/map/filter/reduce/etc - O(n)
