@@ -1,0 +1,34 @@
+-- understanding the problem --
+Ask:
+1. Can I restate the problem in my own words? Try and rephrase it so I understand the question fully.
+
+2. What are the inputs that go into the problem?
+-> Consider edge-cases, or if the inputs being passed into the function should only be numbers. Consider if there are null values.
+
+3. What outputs should come from the solution? 
+
+4. Can the outputs be determined from the input? 
+5. How should I label the important pieces of data that are part of the problem?
+
+
+--Problem Solving--
+-> Understand the problem
+-> explore concrete examples
+-> break it down. Explicitly write the steps out that you need to take. This way you think about the code and possibly catch any conceptual issues/misunderstandings before just diving into the code.
+-> Solve / simplify.
+-> Look back and refactor
+
+- Simplify -
+-> find the difficulty in what you're trying to do. 
+-> ignore difficulty for now
+-> write a simple solution
+-> incorporate the difficulty back in
+
+- Refactoring Q's -
+-> Can you check the result?
+-> Can you replicate the result differently?
+-> Is it readable at a glance?
+-> Can you use the result/method for another problem?
+-> Can the solution performance be improved?
+-> can you think of other ways to refactor?
+-> How have other people solved this problem? (ask at the end after solving yourself)
