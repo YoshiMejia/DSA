@@ -1,0 +1,41 @@
+most common complexities are 
+-> O(1) - (constant)
+-> O(n)
+-> O(n2) - n squared
+
+a logarithm is the inverse of exponentiation. logarithms and exponents are a pair.
+
+log2(8) = 3 #=> what's being asked/calculated here is "two to what power equals 8?"
+if we take 2 and raise it to some power, what power will give us 8? 2*2*2 = 8 so 2 cubed gives us 8
+
+basically: log2(value) = exponent == 2(exponent) = value
+
+Logarithms are sometimes log3. log2 is most common, called the binary logarithm.
+
+log === log2
+
+Logarithms arent mathematical equations on their own, you cant take the log of a number without a base. like log2 or log10
+
+rule of thumb-- the logarithm of a number roughly measures the number or times you can divide that number by 2 *before you get a value that's less than or equal to one*
+examples: 
+ (1) 8 / 2 = 4 
+ (2) 4 / 2 = 2 
+ (3) 2 / 2 = 1
+ So for the log of 8, log(8) = 3 
+ 
+(1) 25 / 2 = 12.5
+(2) 12.5 / 2 = 6.25
+(3) 6.25 / 2 = 3.125
+(4) 3.125 / 2 = 1.5625
+(5) 1.5625 / 2 = 0.78125
+
+log of 25 === log(25) ~= 4.64
+
+logarithmic time complexity is great === O(log n)
+
+Certain searching algorithms have logarithmic time complexity. As well as efficient sorting algo's and recursion.
+
+Recap:
+- To analyze the performance of an algo, we use Big O notation. As the input size grows, we want to know how the runtime/space complexity changes.
+- Big O gives high level of understanding of the time/space complexity of an algo. 
+- Big O doesnt care about precision, just general trends. The hardware doesn't matter, just the algo itself.
