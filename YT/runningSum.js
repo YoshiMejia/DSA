@@ -22,3 +22,14 @@ const runningSum = nums => {
     }
     return result;
 } 
+
+//shorter for loop body
+
+const runningSum2 = nums => {
+    let result = []
+    let currentSum = 0;
+    for(let i = 0; i < nums.length; i++){
+        result.push(currentSum += nums[i])
+    }
+    return result;
+} 
