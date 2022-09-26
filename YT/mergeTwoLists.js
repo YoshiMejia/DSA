@@ -1,6 +1,9 @@
 const mergeTwoLists = (l1, l2) => {
+    //initialize a node element
     const dummy = new ListNode(-Infinity);
+    //pointer to reference dummy node to return at end
     let prev = dummy;
+    //ensure both values are truthy, while they are...
     while(l1 && l2) {
         if(l1.val <= l2.val){
             prev.next = l1;
