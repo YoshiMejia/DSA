@@ -20,3 +20,5 @@ const mergeTwoLists = (l1, l2) => {
 
     return dummy.next;
 }
+
+//https://www.youtube.com/watch?v=IHY6qcVq9Wo&t=646s
