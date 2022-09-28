@@ -22,6 +22,8 @@ const reverseLinked = (head) => {
     return prev;
 }
 
+// https://www.youtube.com/watch?v=UCv-EmtvPe4
+
 // console.log'ing of the above while loop 
 
 // next = head.next #=> [2,3,4,5]
