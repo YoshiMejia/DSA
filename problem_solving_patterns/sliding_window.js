@@ -6,13 +6,19 @@
 function maxSubarraySum(arr, num){
     let maxSum = 0;
     let tempSum = 0;
+    //immediately return null if the arg entered is larger than the array
     if(arr.length < num) return null;
+    // set the max sum to the first "window" sum
     for(let i = 0; i < num; i++){
         maxSum += arr[i];
     }
+    //temporary reference to the sum we just got
     tempSum = maxSum;
+    // now that the first window was added under max sum, create a loop that begins at the element right outside the window established above
     for(let i = num; i < arr.length; i++){
+        // tempsum is now removing the first element from the maxSum sum ( - arr[i - num]) and adding the next element( + arr[i]), thus *sliding* the window
         tempSum = tempSum - arr[i - num] + arr[i];
+        //Math.max returns whichever is largest of these two args
         maxSum = Math.max(maxSum, tempSum);
     }
     return maxSum;
