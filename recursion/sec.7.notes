@@ -20,3 +20,34 @@ how recursive functions work
 
 - no base case
 - forgetting to return, or returning the wrong thing
+
+vid.48.Helper method recursion
+
+example: 
+
+function outer(input){
+    let outerScopeVar = []
+    function helper(helperInput){
+        //modify the outerScopeVar
+        helper(helperInput--)
+    }
+    helper(input)
+    return outerScopeVar;
+}
+
+example 2 - collecting all odd values in an array - 
+
+function collectOddValues(arr){
+    let result = []
+    function helper(helperInput){
+        if(helperInput.length === 0){
+            return;
+        }
+        if(helperInput[0] % 2 !== 0){
+            result.push(helperInput[0])
+        }
+        helper(helperInput.slice(1))
+    }
+    helper(arr)
+    return result;
+}
