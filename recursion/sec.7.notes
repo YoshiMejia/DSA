@@ -1,0 +1,14 @@
+The call stack.
+
+-Stack data structure.
+- any time a function is invoked, it's placed (pushed) on the top of the call stack
+- when JS sees the 'return' keyword or when the function ends, the compiler removes (pop) the top item from the call stack
+- when writing recursive functions, we keep pushing new functions onto the call stack
+
+how recursive functions work
+ - invoke the same function w different inputs until you reach your base case
+    Base case is where the recursion ends. It's the condition on which the function calls stop ( like a while loop dependent on while the array is not empty)
+
+2 essential parts to a recursive function --
+    - Base case
+    - Diff inputs
