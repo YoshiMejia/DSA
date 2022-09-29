@@ -72,3 +72,5 @@ function collectOddValues(arr){
 --Pure Recursion Tips--
 
 - for arrays, use methods like .slice, the spread operator, and .concat all of which make copies of arrays so we don't mutate the original.
+- strings are immutable so you'll need to use methods like .slice, .substr, or substring to make copies of strings
+- to make copies of objects use Object.assign, or the spread operator.
