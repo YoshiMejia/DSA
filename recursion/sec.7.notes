@@ -1,3 +1,5 @@
+.vid44.
+
 The call stack.
 
 -Stack data structure.
@@ -13,4 +15,8 @@ how recursive functions work
     - Base case
     - Diff inputs
 
-    
+
+.vid47.Common recursion pitfalls
+
+- no base case
+- forgetting to return, or returning the wrong thing
