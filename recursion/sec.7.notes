@@ -51,3 +51,24 @@ function collectOddValues(arr){
     helper(arr)
     return result;
 }
+
+example 3 - above function but using Pure Recursion (no helper method)
+
+function collectOddValues(arr){
+    // a new array will be made on each function call made below, but it will all be concatenated to one array at the end
+
+    let newArr = [];
+        if(arr.length === 0){
+            return newArr;
+        }
+        if(arr[0] % 2 !== 0){
+            newArr.push(arr[0])
+        }
+    newArr = newArr.concat(collectOddValues(arr.slice(1)));
+    return newArr;
+}
+
+
+--Pure Recursion Tips--
+
+- for arrays, use methods like .slice, the spread operator, and .concat all of which make copies of arrays so we don't mutate the original.
