@@ -39,15 +39,21 @@
 const findPivotIndex = (nums) => {
     let totalSum = 0;
     let leftSum = 0;
+    //calculate total of the entire array
     nums.forEach((num) =>{
         totalSum += num
     })
+    //for loop dependent on the length of the array
     for(let i = 0; i < nums.length; i++){
+        //if the totalSum minus the current value of leftsum and minus the current number being iterated on from nums equal to the left sum?
         if(totalSum - leftSum - nums[i] === leftSum){
+            //if it is equal, return the index of that number
             return i
         }
+        //if not, that conditional is skipped and the line below runs, which adds the current element to the leftSum's value
         leftSum += nums[i]
     }
+    // if this line is reached, it means the if statement wasn't hit and there is no index that satisfies those conditions
     return -1;
 }
 
